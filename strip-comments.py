@@ -1,3 +1,7 @@
+"""
+    This script removes comments from most common web development files.
+    (no point in end user seeing comments in the source code)
+"""
 import os
 import sys
 import shutil
