@@ -14,7 +14,7 @@ export async function doPrint(href) {
     for (const element of elements) {
         i++;
         await new Promise((resolve) => setTimeout(resolve, i * 25));
-        await printElement(element, intermed);
+        printElement(element, intermed);
     }
 }
 
@@ -30,7 +30,7 @@ export function isnum(num) {
     return false;
 }
 
-async function printElement(element, template) {
+function printElement(element, template) {
     let clone = template.querySelector("template").content.cloneNode(true);
     // old way: let clone = document.querySelector("template").content.cloneNode(true);
     if (document.getElementById("jump") == null) {
