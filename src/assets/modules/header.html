@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a
+            style="
+                position: relative;
+                left: -200%;
+                width: 0px;
+                height: 0px;
+                color: rgba(0, 0, 0, 0);
+            "
+            href="#jump"
+            >Menü elemek átugrása</a
+        >
+        <a class="navbar-brand" href="#">Data Hub</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> Kezdőlap </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="source.html"> Akiktől Loptam </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="kapcsolat.html"> Kapcsolat </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-3">
+                <li>
+                    <a
+                        aria-label="Switch color theme"
+                        tabindex="0"
+                        onclick="themeSwitch()"
+                        onkeypress="if(event.key === 'Enter' || event.key === ' ') { themeSwitch() }"
+                        style="cursor: pointer"
+                    >
+                        <img
+                            id="themeSwitch"
+                            height="20rem"
+                            src="assets/images/shared/moon.svg"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

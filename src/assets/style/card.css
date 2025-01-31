@@ -1,0 +1,89 @@
+:rooty {
+    --card-hover: crimson;
+}
+
+.card {
+    transform: scale(1);
+    transition: 0.25s;
+}
+
+.lightcard {
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.25s;
+    box-shadow: none;
+    /*
+    animation: shake 0.25s;
+    animation-iteration-count: 1;
+    */
+    --highlight: var(--card-hover, "crimson");
+    box-shadow: 0 0 0.75rem 0.35rem var(--highlight);
+}
+
+.card:focus {
+    border: solid 1px #0426e6;
+    transition: 0.1s;
+}
+
+.star {
+    margin-top: -0.375em;
+    margin-bottom: 0em;
+}
+.col {
+    animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+    /* Prestate*/
+    opacity: 0;
+    /* remove transform for just a fade-in*/
+    transform: rotateX(-90deg);
+    transform-origin: top center;
+}
+
+a.col {
+    text-decoration: none;
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg) scale(1.01);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg) scale(1.015);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg) scale(1.02);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg) scale(1.025);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg) scale(1.03);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg) scale(1.035);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg) scale(1.04);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg) scale(1.045);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg) scale(1.046);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg) scale(1.047);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg) scale(1.049);
+    }
+}

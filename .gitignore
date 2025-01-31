@@ -1,0 +1,21 @@
+# NOTE: Inverted rules!!!
+
+#ignore everything
+/*
+/*/
+
+#except for these
+#/*
+!/src
+/src/*
+!/src/*.html
+/src/googleb82921b9469de62c.html
+!/src/assets
+/src/assets/*
+!/src/assets/style
+!/src/assets/scripts
+!/src/assets/modules
+!/.gitignore
+!/strip-comments.py
+!/README.md
+!/LICENSE
