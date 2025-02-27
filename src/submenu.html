@@ -52,6 +52,9 @@
             const semester = urlParams.get("felev");
             if (semester.length == 1 && isnum(semester)) {
                 let src = "assets/data/";
+                if (semester == -1) {
+                    src += "utils.json";
+                }
                 if (semester == 0) {
                     src += "valaszthato.json";
                 } else {
